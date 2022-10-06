@@ -1,0 +1,15 @@
+<%- include('partials/head') %> 
+  <body>
+    <h1 class="">This generates a random Die roll : <%= rand %></h1>
+
+    <% if(rand % 2 === 0){ %>
+    <h2>Your number is even!</h2>
+
+    <% } else {%>
+    <h2>That is an odd number!</h2>
+    <% } %>
+    <!-- //ternary operator -->
+
+    <h3>Your number is <%= rand%2===0 ? 'Even' : 'Odd'%></h3>
+  </body>
+</html>
